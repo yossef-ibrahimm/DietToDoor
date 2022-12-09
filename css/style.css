@@ -1,0 +1,684 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-300: #73caa6;
+  --dark-green: #205243;
+  --light-green: #27755e;
+  --programs-card-balanced-bg: #fde4dc;
+  --programs-card-balanced-main: #a55032;
+  --programs-card-balanced-dark: #804f56;
+  --programs-card-balanced-btn: #ffb076;
+  --programs-card-balanced-btn-color: #634229;
+  --programs-card-balanced-chip: #ffdac2;
+  --programs-card-muscle-bg: #eee;
+  --programs-card-muscle-main: #121419;
+  --programs-card-muscle-dark: #1e2e56;
+  --programs-card-muscle-btn: #ababab;
+  --programs-card-muscle-btn-color: #424857;
+  --programs-card-muscle-chip: #e4e4e4;
+  --programs-card-kids-bg: #fffaee;
+  --programs-card-kids-main: #bb8000;
+  --programs-card-kids-dark: #996900;
+  --programs-card-kids-btn: #ffca57;
+  --programs-card-kids-btn-color: #aa7400;
+  --programs-card-kids-chip: #fff3da;
+  --programs-card-lowcarb-bg: #ffe8f9;
+  --programs-card-lowcarb-main: #fe1ac1;
+  --programs-card-lowcarb-dark: #c05aa5;
+  --programs-card-lowcarb-btn: #ffbaed;
+  --programs-card-lowcarb-btn-color: #fd5ad3;
+  --programs-card-lowcarb-chip: #ffd7f4;
+  --programs-card-vegetarian-bg: #e6ffef;
+  --programs-card-vegetarian-main: #174729;
+  --programs-card-vegetarian-dark: #21653b;
+  --programs-card-vegetarian-btn: #52f792;
+  --programs-card-vegetarian-btn-color: #1f6139;
+  --programs-card-vegetarian-chip: #ccffe0;
+}
+
+body {
+  font-family: "Rubik", "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: #205243;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #278f70;
+  height: 10px !important;
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+/* __loading_article_start__ */
+.loading_page {
+  background-image: url(/photos/edgar-castrejon-1SPu0KT-Ejg-unsplash.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  clip-path: polygon(0px 0px, 100% 0px, 100% 90.74%, 0px 100%);
+  display: flex;
+  align-items: center;
+}
+.loading_page div {
+  margin-left: 5em;
+}
+.loading_page h1 {
+  animation: h1_anime 1.5s forwards ease-in-out;
+  position: relative;
+  font-size: 5.5em;
+  font-weight: 600;
+  color: #fff;
+}
+
+@keyframes h1_anime {
+  0% {
+    left: -60vw;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 0em;
+  }
+}
+.loading_page .loading_svg {
+  position: relative;
+  animation: svg_anime 3s forwards ease;
+  opacity: 1;
+}
+
+@keyframes svg_anime {
+  0% {
+    width: 0em;
+  }
+  100% {
+    width: 30em;
+  }
+}
+.loading_page h3 {
+  display: inline-block;
+  animation: h3_anime 2.5s forwards ease-in-out;
+
+  position: relative;
+  font-size: 4.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+@keyframes h3_anime {
+  0% {
+    bottom: -60vh;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0vh;
+  }
+}
+.loading_page h2 {
+  animation: h2_anime 2.5s forwards ease-in-out;
+  font-size: 1.5em;
+  position: relative;
+  color: #52f792;
+  margin: 15px 15px 15px 0px;
+}
+
+@keyframes h2_anime {
+  0% {
+    left: -60vw;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 0em;
+  }
+}
+.loading_page #down {
+  bottom: 100px;
+  height: 60px;
+  width: 30px;
+  position: absolute;
+  left: 50%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading_page #down:before,
+.loading_page #down::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  border-top: transparent;
+  border-left: transparent;
+  border-bottom: solid #fff 2px;
+  border-right: solid #fff 2px;
+  transform: rotate(45deg);
+  animation: scroll_for_details 1.5s ease-in-out infinite;
+}
+.loading_page #down::after {
+  animation: scroll_for_details 2s ease-in-out infinite;
+}
+
+@keyframes scroll_for_details {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  100% {
+    top: 90%;
+    opacity: 1;
+  }
+}
+
+/* how it works */
+#howItWorks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  margin: 50px 0 100px 0;
+}
+#howItWorks h1 {
+  font-size: 4em;
+  font-weight: 500;
+  color: #73caa6;
+}
+#howItWorks #HowItWorksDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#howItWorks #HowItWorksDiv h2 {
+  font-size: 2em;
+}
+#howItWorks #HowItWorksDiv P {
+  font-size: 1.1em;
+}
+#howItWorks .col-1,
+#howItWorks .col-2,
+#howItWorks .col-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px;
+  width: 330px;
+}
+#howItWorks .col-1 p,
+#howItWorks .col-2 p,
+#howItWorks .col-3 p,
+#howItWorks .col-1 h2,
+#howItWorks .col-2 h2,
+#howItWorks .col-3 h2 {
+  color: #0b3937;
+}
+
+/* why diet to door p start */
+#Why_diet_to_door {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Why_diet_to_door .Why_diet_to_door_div {
+  position: relative;
+  background-image: url(/photos/bg-texture_lg.webp);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 0px;
+  padding: 20px;
+}
+#Why_diet_to_door .Why_diet_to_door_div .icon_Why_diet_to_door {
+  position: absolute;
+  top: -100px;
+  left: -50px;
+  z-index: 1;
+}
+#Why_diet_to_door .Why_diet_to_door_div .icon_Why_diet_to_door img,
+#Why_diet_to_door .Why_diet_to_door_div .icon_Why_diet_to_door_2 img {
+  width: 300px;
+  height: 300px;
+}
+#Why_diet_to_door .Why_diet_to_door_div .icon_Why_diet_to_door_2 {
+  position: absolute;
+  bottom: -100px;
+  right: -50px;
+  z-index: 1;
+}
+
+#Why_diet_to_door .Why_diet_to_door_div h1 {
+  font-size: 2.9em;
+  padding: 25px 0;
+  color: #d3f6e0;
+}
+#Why_diet_to_door .Why_diet_to_door_div p {
+  font-size: 1.5em;
+  color: #dbe98a;
+  font-weight: 400;
+  width: 70%;
+  text-align: center;
+  padding: 1em 0px;
+  z-index: 2;
+}
+#Why_diet_to_door #button_all_programs {
+  --color: #00a97f;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: 0.5em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 500;
+  font-size: 1.1em;
+  border: 1px solid;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+  text-decoration: none;
+}
+#Why_diet_to_door #button_all_programs::before,
+#Why_diet_to_door #button_all_programs::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -10;
+  background-color: var(--color);
+  transition: 1s ease;
+}
+#Why_diet_to_door #button_all_programs::before {
+  top: -1em;
+  left: -1em;
+}
+#Why_diet_to_door #button_all_programs::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+#Why_diet_to_door #button_all_programs:hover::before,
+#Why_diet_to_door #button_all_programs:hover::after {
+  height: 410px;
+  width: 410px;
+}
+#Why_diet_to_door #button_all_programs:hover {
+  color: #0a191e;
+}
+#Why_diet_to_door #button_all_programs:active {
+  filter: brightness(0.8);
+}
+#Why_diet_to_door #button_all_programs:hover {
+  background-color: #268065;
+}
+#Why_diet_to_door #button_all_programs:active {
+  background-color: #208b6b;
+}
+
+/* programs start */
+.diet-plans {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.Badges_container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+  gap: 20px;
+  padding-block: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.Badges_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 450px;
+  padding: 5px 20px;
+  background-color: #f7f9f9;
+}
+
+.Badges_text {
+  margin-inline-start: 10px;
+  color: #8ea9c5;
+}
+
+.diet-plans h2 {
+  text-align: center;
+  font-size: 3.5em;
+  color: var(--primary-300);
+  font-weight: 400;
+}
+.about {
+  height: 60px;
+}
+.diet-plans p {
+  line-height: 1.5;
+  /*  font-size: 1.3em; */
+  text-align: center;
+}
+
+.diet-plans div span {
+  display: inline-block;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  padding: 0px 10px;
+  width: 20%;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.card {
+  width: 400px;
+  /* 
+  height: 250px; */
+  border-radius: 10px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 4.7px 6.5px 5.3px rgba(0, 0, 0, 0.028),
+    15.9px 21.9px 17.9px rgba(0, 0, 0, 0.042),
+    71px 98px 80px rgba(0, 0, 0, 0.07);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  margin: 20px;
+}
+
+.card a {
+  width: 95%;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: transparent;
+  margin: 10px;
+  position: relative;
+  bottom: 0px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 5px;
+  display: inline-block;
+  position: absolute;
+  top: -2.1rem;
+  left: 45%;
+  background-color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.info {
+  margin-top: 1.2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.kcals {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.name_of_plan {
+  display: flex;
+  height: 140px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.name_of_plan p {
+  font-size: 1em;
+  padding: 0px 20px;
+}
+
+.card:hover,
+.card:hover .programs_card__icon__1 {
+  transform: translate(-0.5%, -2px);
+}
+
+.plans div h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  text-align: center;
+  margin: 15px 8px 10px 8px;
+  line-height: 1.5;
+}
+
+.balanced {
+  border: 1px var(--programs-card-balanced-btn) solid;
+  background-color: #fde4dc;
+}
+
+.balance_card__icon {
+  border: 1px var(--programs-card-balanced-btn) solid;
+  background-color: #fde4dc;
+}
+
+.balanced div span {
+  background-color: var(--programs-card-balanced-chip);
+}
+
+.balanced:hover,
+.balanced:hover .balance_card__icon {
+  box-shadow: 0 0 0 1px var(--programs-card-balanced-btn);
+}
+
+.balanced div h2 {
+  color: var(--programs-card-balanced-main);
+}
+
+.balanced div p {
+  color: var(--programs-card-balanced-dark);
+}
+
+.details_balance a {
+  color: var(--programs-card-balanced-btn-color);
+  border: 1px var(--programs-card-balanced-btn) solid;
+}
+
+.details_balance a:hover {
+  background-color: var(--programs-card-balanced-btn);
+  transition: all ease-in-out 0.3s;
+}
+
+.muscle_gain {
+  border: 1px var(--programs-card-muscle-btn) solid;
+  background-color: #eee;
+}
+
+.muscle_card__icon {
+  border: 1px var(--programs-card-muscle-btn) solid;
+  background-color: #eee;
+}
+
+.muscle_gain div span {
+  background-color: var(--programs-card-muscle-chip);
+}
+
+.muscle_gain:hover,
+.muscle_gain:hover .muscle_card__icon {
+  box-shadow: 0 0 0 1px var(--programs-card-muscle-btn);
+}
+
+.muscle_gain div h2 {
+  color: var(--programs-card-muscle-main);
+}
+
+.muscle_gain div p {
+  color: var(--programs-card-muscle-dark);
+}
+
+.details_muscle_gain a {
+  color: var(--programs-card-muscle-btn-color);
+  border: 1px var(--programs-card-muscle-btn) solid;
+}
+
+.details_muscle_gain a:hover {
+  background-color: var(--programs-card-muscle-btn);
+  transition: all ease-in-out 0.3s;
+}
+
+.low_carb {
+  border: 1px var(--programs-card-lowcarb-btn) solid;
+  background-color: #ffe8f9;
+}
+
+.low_carb_card__icon {
+  border: 1px var(--programs-card-lowcarb-btn) solid;
+  background-color: #ffe8f9;
+}
+
+.low_carb div span {
+  background-color: var(--programs-card-lowcarb-chip);
+}
+
+.low_carb:hover,
+.low_carb:hover .low_carb_card__icon {
+  box-shadow: 0 0 0 1px var(--programs-card-lowcarb-btn);
+}
+
+.low_carb div h2 {
+  color: var(--programs-card-lowcarb-main);
+}
+
+.low_carb div p {
+  color: var(--programs-card-lowcarb-dark);
+}
+
+.details_low_carb a {
+  color: var(--programs-card-lowcarb-btn-color);
+  border: 1px var(--programs-card-lowcarb-btn) solid;
+}
+
+.details_low_carb a:hover {
+  background-color: var(--programs-card-lowcarb-btn);
+  transition: all ease-in-out 0.3s;
+}
+
+.kids {
+  border: 1px var(--programs-card-kids-btn) solid;
+  background-color: #fffaee;
+}
+
+.kids_card__icon {
+  border: 1px var(--programs-card-kids-btn) solid;
+  background-color: #fffaee;
+}
+
+.kids div span {
+  background-color: var(--programs-card-kids-chip);
+}
+
+.kids:hover,
+.kids:hover .kids_card__icon {
+  box-shadow: 0 0 0 1px var(--programs-card-kids-btn);
+}
+
+.kids div h2 {
+  color: var(--programs-card-kids-main);
+}
+
+.kids div p {
+  color: var(--programs-card-kids-dark);
+}
+
+.kids_details a {
+  color: var(--programs-card-kids-btn-color);
+  border: 1px var(--programs-card-kids-btn) solid;
+}
+
+.kids_details a:hover {
+  background-color: var(--programs-card-kids-btn);
+  transition: all ease-in-out 0.3s;
+}
+
+.vegetarian {
+  border: 1px var(--programs-card-vegetarian-btn) solid;
+  background-color: #e6ffef;
+}
+
+.vegetarian_card__icon {
+  border: 1px var(--programs-card-vegetarian-btn) solid;
+  background-color: #e6ffef;
+}
+
+.vegetarian div span {
+  background-color: var(--programs-card-vegetarian-chip);
+}
+
+.vegetarian:hover,
+.vegetarian:hover .vegetarian_card__icon {
+  box-shadow: 0 0 0 1px var(--programs-card-vegetarian-btn);
+}
+
+.vegetarian div h2 {
+  color: var(--programs-card-vegetarian-main);
+}
+
+.vegetarian div p {
+  color: var(--programs-card-vegetarian-dark);
+}
+
+.details_vegetarian a {
+  color: var(--programs-card-vegetarian-btn-color);
+  border: 1px var(--programs-card-vegetarian-btn) solid;
+}
+
+.details_vegetarian a:hover {
+  background-color: var(--programs-card-vegetarian-btn);
+  transition: all ease-in-out 0.3s;
+}

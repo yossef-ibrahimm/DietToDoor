@@ -1,0 +1,40 @@
+  <svg
+            style="fill: rgba(23, 80, 67, 0.48)"
+            class="balance_card__icon icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 93 132"
+          >
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="prefix__a"
+                x="1.5"
+                y="1.5"
+              >
+                <feOffset in="SourceAlpha" dy="7"></feOffset>
+                <feGaussianBlur result="blurOut"></feGaussianBlur>
+                <feFlood flood-color="#000" result="floodOut"></feFlood>
+                <feComposite
+                  operator="atop"
+                  in="floodOut"
+                  in2="blurOut"
+                ></feComposite>
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.12"></feFuncA>
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+              </filter>
+            </defs>
+            <g>
+              <path
+                fill-rule="evenodd"
+                stroke-width="3"
+                stroke="#547480"
+                fill="#FF8459"
+                d="M56.767 121.556c-9.131-14.149 8.9-36.769 8.9-36.769s-1.484-1.059-7.682 1.626a21.611 21.611 0 00-6.19 4.037 59.163 59.163 0 013.36-6.477c10.694-17.954-3.915-35.447-3.235-32.934 1.409 5.199-3.975 15.857-10.108 21.143-4.482 3.864-14.016 10.504-14.555 21.143-.642 12.675 7.277 23.433 11.847 28.538a40.283 40.283 0 01-6.712-1.77c-.248-.009-.596-.111-1.092-.339-.365-.168-.707-.344-1.063-.515a32.477 32.477 0 01-3.565-1.836c-24.22-13.494-24.4-34.992-16.583-49.78 4.915-9.298 13.323-16.072 15.086-30.041.911-7.226.202-12.762.202-12.762 9.311 4.949 10.492 14.893 10.511 20.884 2.118-2.486 4.011-5.09 5.481-7.888 8.77-16.695-6.466-31.895-4.921-32.181 11.5-2.123 37.399 20.962 39.222 46.726.035 6.506-.906 14.764-4.777 21.968-.629 1.171 6.228-.523 10.581-13.38 1.953 3.382 4.05 9.623 5.411 17.093 3.867 21.223-11.013 39.104-30.118 43.514z"
+              ></path>
+            </g>
+          </svg>

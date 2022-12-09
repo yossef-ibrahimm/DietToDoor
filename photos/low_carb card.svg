@@ -1,0 +1,116 @@
+ <svg
+            style="fill: rgba(23, 80, 67, 0.48)"
+            class="low_carb_card__icon icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 132 131"
+          >
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="prefix__a"
+                x="1.5"
+                y="1.5"
+              >
+                <feOffset in="SourceAlpha" dy="7"></feOffset>
+                <feGaussianBlur result="blurOut"></feGaussianBlur>
+                <feFlood flood-color="#000" result="floodOut"></feFlood>
+                <feComposite
+                  operator="atop"
+                  in="floodOut"
+                  in2="blurOut"
+                ></feComposite>
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.12"></feFuncA>
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+              </filter>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="prefix__b"
+                x="66.5"
+                y="12.5"
+              >
+                <feOffset in="SourceAlpha" dy="7"></feOffset>
+                <feGaussianBlur result="blurOut"></feGaussianBlur>
+                <feFlood flood-color="#000" result="floodOut"></feFlood>
+                <feComposite
+                  operator="atop"
+                  in="floodOut"
+                  in2="blurOut"
+                ></feComposite>
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.12"></feFuncA>
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+              </filter>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="prefix__c"
+                x="14.5"
+                y="40.5"
+              >
+                <feOffset in="SourceAlpha" dy="7"></feOffset>
+                <feGaussianBlur result="blurOut"></feGaussianBlur>
+                <feFlood flood-color="#000" result="floodOut"></feFlood>
+                <feComposite
+                  operator="atop"
+                  in="floodOut"
+                  in2="blurOut"
+                ></feComposite>
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.12"></feFuncA>
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+              </filter>
+            </defs>
+            <g>
+              <path
+                fill-rule="evenodd"
+                stroke-width="3"
+                stroke="#547480"
+                fill="#9DFF7E"
+                d="M11.066 57.665c3.16-3.212 5.32-7.293 4.138-11.576-2.338-8.913 5.54-18.838 14.88-18.394 4.259.183 7.96-2.663 9.129-6.575 2.603-8.859 13.878-13.46 21.624-8.641 3.769 2.28 8.335 1.256 10.958-1.593 6.176-6.543 20.006-5.682 25.135 2.182 10.661 16.403 2.865 34.283 2.355 35.085C87.01 67.437 78.852 58.204 65.634 69.319c-1.77 1.489-5.166 4.046-6.722 5.197-3.845-.018-2.874 2.492-10.017 4.144-4.922 1.052 2.284 12.365-1.46 9.302-3.491-2.872-6.548-8.872-10.574-6.691-2.271 1.239-2.829 2.099-14.729 2.302-19.67-5.665-17.534-19.422-11.066-25.908z"
+              ></path>
+            </g>
+            <g>
+              <path
+                fill-rule="evenodd"
+                stroke-width="3"
+                stroke="#547480"
+                fill="#FFF"
+                d="M122.631 44.186c-3.67 3.658-11.498 3.519-15.408.115L80.437 70.993l-8.602-8.572 26.786-26.692c-3.416-3.896-3.555-11.696.115-15.354 3.795-3.781 9.917-3.809 13.676-.064 2.055 2.048 2.97 4.801 2.763 7.494 2.703-.206 5.465.705 7.521 2.754 3.758 3.745 3.729 9.846-.065 13.627z"
+              ></path>
+            </g>
+            <g>
+              <path
+                fill-rule="evenodd"
+                stroke-width="3"
+                stroke="var(--programs-card-lowcarb-btn)"
+                fill="var(--programs-card-lowcarb-main)"
+                d="M31.054 63.691c-16.716 16.657-11.609 36.054-.159 47.463 11.449 11.409 30.914 16.498 47.63-.159S102.559 62.56 91.11 51.151c-11.449-11.41-43.34-4.117-60.056 12.54z"
+              ></path>
+            </g>
+            <path
+              fill-rule="evenodd"
+              stroke-width="3"
+              stroke="var(--programs-card-lowcarb-btn)"
+              fill="var(--programs-card-lowcarb-main)"
+              d="M69.305 117.41c8.814-8.767 5.956-25.824-6.383-38.097-12.338-12.274-29.485-15.117-38.298-6.35-8.813 8.767-5.956 25.824 6.383 38.098 12.338 12.273 29.485 15.116 38.298 6.349z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              stroke-width="3"
+              stroke="#547480"
+              fill="#FFF"
+              d="M52.963 102.275c2.467-2.454 1.681-7.216-1.756-10.635-3.437-3.419-8.224-4.201-10.692-1.746-2.467 2.455-1.681 7.216 1.756 10.635 3.437 3.419 8.224 4.201 10.692 1.746z"
+            ></path>
+          </svg>

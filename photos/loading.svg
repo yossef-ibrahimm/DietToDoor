@@ -1,0 +1,29 @@
+  <svg
+          fill="none"
+          viewBox="0 0 544 20"
+          xmlns="http://www.w3.org/2000/svg"
+          class="Hero_underline_svg____S8n"
+        >
+          <path
+            d="M4 16c136.833-7.306 433.5-22.892 535.5 0"
+            stroke="url(#a)"
+            stroke-linecap="round"
+            stroke-width="8"
+            opacity="1"
+            stroke-dashoffset="0px"
+            stroke-dasharray="536.4224853515625px 536.4224853515625px"
+          ></path>
+          <defs>
+            <linearGradient
+              id="a"
+              gradientUnits="userSpaceOnUse"
+              x1="360.5"
+              x2="528.5"
+              y1="15.69"
+              y2="16"
+            >
+              <stop stop-color="#eff7b4"></stop>
+              <stop offset="1" stop-color="#f7fbd9" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+        </svg>

@@ -1,0 +1,46 @@
+        <svg    
+     
+        
+          viewBox="0 0 97.94 81.9 "
+        xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+
+        >
+          <g class="prefix__DTD" data-name="DTD_logo ">
+            <g class="prefix__DTD_shape">
+              <path
+                class="prefix__DTD_shape-rect"
+                stroke-width="3 "
+                stroke="#fff"
+                fill="none "
+                stroke-miterlimit="10 "
+                d="M60.9 10.48h4.19v42.64H33.8V10.48h6.15 "
+              ></path>
+              <path
+                fill="#fff "
+                d="M51.45 18.63a20 20 0 011.42-3.56 38 38 0 014-6.34q-.84 1.92-1.65 3.93C54 15.5 53 18.27 52.12 20.94a1.39 1.39 0 01-.7-.55 2.07 2.07 0 01.03-1.76z"
+              ></path>
+              <path
+                d="M51.29 20.05A13.8 13.8 0 0159 2.3l.77-.3.3.78a.63.63 0 000 .09 13.8 13.8 0 01-7.7 17.75l-.78.32-.3-.78a.63.63 0 000-.11z "
+                stroke="#fff "
+                stroke-width="3 "
+                fill="none "
+                stroke-miterlimit="10 "
+              ></path>
+              <path
+                fill="#fff "
+                d="M45.51 16a13.66 13.66 0 00-.51-1.29v-.07a10.15 10.15 0 00-2.33-3.25q.18.29.36.6c.2.36.38.7.53 1l.78 2.01.89 2.22c.15.21.39.54.7.93a15.13 15.13 0 00-.42-2.15z "
+              ></path>
+              <path
+                d="M45.7 16.64a8.34 8.34 0 00-4.65-10.72l-.47-.19-.18.47a.14.14 0 010 .06A8.34 8.34 0 0045 17l.47.19.18-.48a.17.170 01.05-.07z "
+                stroke-width="1.62 "
+                stroke="#fff "
+                fill="none "
+                stroke-miterlimit="10 "
+              ></path>
+              <circle cx="59.67 " cy="36.18 " r="1.34 " fill="#fff "></circle>
+            </g>
+            <g class="prefix__DTD_txt">
+              
+            </g>
+          </g>
+        </svg>

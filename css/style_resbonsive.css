@@ -1,0 +1,96 @@
+@media (max-width: 650px) {
+  body {
+    font-size: 13.5px;
+  }
+  .loading_page div {
+    margin-left: 2em;
+  }
+  .loading_page h1 {
+    font-size: 4.5em;
+  }
+  .loading_page h3 {
+    font-size: 3.5em;
+  }
+  #Why_diet_to_door .Why_diet_to_door_div p {
+    width: 100%;
+  }
+  #Why_diet_to_door .Why_diet_to_door_div .icon_Why_diet_to_door {
+    left: -20px;
+  }
+  #Why_diet_to_door .Why_diet_to_door_div .icon_Why_diet_to_door img,
+  #Why_diet_to_door .Why_diet_to_door_div .icon_Why_diet_to_door_2 img {
+    width: 150px;
+    height: 150px;
+  }
+  #Why_diet_to_door .Why_diet_to_door_div .icon_Why_diet_to_door_2 {
+    bottom: -100px;
+    right: -20px;
+  }
+  .logo img {
+    height: 50px;
+  }
+  .toggle__btn {
+    position: absolute;
+    display: block !important;
+    right: 3rem;
+    top: 0.7rem;
+  }
+  .nav-bar {
+    display: none !important;
+  }
+  .resbonsive_navbar {
+    width: 60%;
+    background-color: #27755e;
+    position: absolute;
+    right: 2rem;
+    top: 4.5rem;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+
+    display: none;
+    animation: display 1s forwards alternate;
+  }
+  header {
+    border-radius: 0px 0px 0px 0px;
+  }
+  .block {
+    transition: all 0.4s ease-in-out;
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .loading_page div {
+    margin-left: 0;
+  }
+
+  .loading_page .loading_svg {
+    width: 360px !important;
+  }
+  #Why_diet_to_door .Why_diet_to_door_div h1 {
+    font-size: 2.5em;
+    padding: 25px 0 0 0;
+  }
+  #Why_diet_to_door .Why_diet_to_door_div p {
+    padding: 1em 0px;
+  }
+  footer section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 330px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 650px) {
+  .resbonsive_navbar {
+    display: none;
+  }
+}

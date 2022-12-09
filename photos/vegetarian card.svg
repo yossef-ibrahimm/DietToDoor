@@ -1,0 +1,182 @@
+  <svg
+            style="fill: rgba(23, 80, 67, 0.48)"
+            class="vegetarian_card__icon icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 131 125"
+          >
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="prefix__a"
+                x="1.5"
+                y="8.5"
+                width="62"
+                height="114"
+              >
+                <feOffset in="SourceAlpha" dy="7"></feOffset>
+                <feGaussianBlur result="blurOut"></feGaussianBlur>
+                <feFlood flood-color="#000" result="floodOut"></feFlood>
+                <feComposite
+                  operator="atop"
+                  in="floodOut"
+                  in2="blurOut"
+                ></feComposite>
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.12"></feFuncA>
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+              </filter>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="prefix__b"
+                x="68.5"
+                y="29.5"
+                width="46"
+                height="50"
+              >
+                <feOffset in="SourceAlpha" dy="7"></feOffset>
+                <feGaussianBlur result="blurOut"></feGaussianBlur>
+                <feFlood flood-color="#000" result="floodOut"></feFlood>
+                <feComposite
+                  operator="atop"
+                  in="floodOut"
+                  in2="blurOut"
+                ></feComposite>
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.12"></feFuncA>
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+              </filter>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="prefix__c"
+                x="50.5"
+                y="1.5"
+                width="68"
+                height="65"
+              >
+                <feOffset in="SourceAlpha" dy="7"></feOffset>
+                <feGaussianBlur result="blurOut"></feGaussianBlur>
+                <feFlood flood-color="#000" result="floodOut"></feFlood>
+                <feComposite
+                  operator="atop"
+                  in="floodOut"
+                  in2="blurOut"
+                ></feComposite>
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.12"></feFuncA>
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+              </filter>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="prefix__d"
+                x="65.5"
+                y="75.5"
+                width="43"
+                height="45"
+              >
+                <feOffset in="SourceAlpha" dy="7"></feOffset>
+                <feGaussianBlur result="blurOut"></feGaussianBlur>
+                <feFlood flood-color="#000" result="floodOut"></feFlood>
+                <feComposite
+                  operator="atop"
+                  in="floodOut"
+                  in2="blurOut"
+                ></feComposite>
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.12"></feFuncA>
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+              </filter>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="prefix__e"
+                x="68.5"
+                y="55.5"
+                width="60"
+                height="62"
+              >
+                <feOffset in="SourceAlpha" dy="7"></feOffset>
+                <feGaussianBlur result="blurOut"></feGaussianBlur>
+                <feFlood flood-color="#000" result="floodOut"></feFlood>
+                <feComposite
+                  operator="atop"
+                  in="floodOut"
+                  in2="blurOut"
+                ></feComposite>
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.12"></feFuncA>
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+              </filter>
+            </defs>
+            <g>
+              <path
+                fill-rule="evenodd"
+                stroke-width="3"
+                stroke="#547480"
+                fill="#FFE88A"
+                d="M44.835 100.199a2.145 2.145 0 01-3.034 0L7.128 65.515a2.145 2.145 0 010-3.034l7.979-7.982a2.143 2.143 0 013.467.625 5.716 5.716 0 009.234 1.666 5.72 5.72 0 00-1.664-9.235 2.145 2.145 0 01-.626-3.47l29.948-29.957a2.145 2.145 0 013.034 0v99.74a2.145 2.145 0 01-3.034 0l-3.851-3.852a2.146 2.146 0 010-3.035 4.801 4.801 0 000-6.781 4.798 4.798 0 00-6.78-.001zm4.522-41.272a5.12 5.12 0 000-7.239 5.116 5.116 0 00-7.237 0 5.12 5.12 0 000 7.239 5.116 5.116 0 007.237 0zm-4.642 23.8a9.504 9.504 0 000-13.438c-3.709-3.711-9.724-3.711-13.434 0a9.504 9.504 0 000 13.438c3.71 3.711 9.725 3.711 13.434 0z"
+              ></path>
+            </g>
+            <path
+              fill-rule="evenodd"
+              stroke="#FFF"
+              stroke-width="3"
+              stroke-linecap="round"
+              fill="#F2F2F2"
+              d="M51.5 25.5l-20 20M17.5 59.5l-6 6"
+            ></path>
+            <g>
+              <path
+                fill-rule="evenodd"
+                stroke-width="3"
+                stroke="#547480"
+                fill="#9DFF7E"
+                d="M89.973 46.286l-16.002 5.497s13.664 4.55 23.234 19.905c.491.789 1.536 1.033 2.349.567l4.132-2.37 4.13-2.37c.813-.466 1.123-1.488.681-2.305-8.598-15.912-5.731-29.946-5.731-29.946L89.973 46.286z"
+              ></path>
+            </g>
+            <g>
+              <path
+                fill-rule="evenodd"
+                stroke-width="3"
+                stroke="#547480"
+                fill="#9DFF7E"
+                d="M107.297 38.125a12.384 12.384 0 01-9.276 1.242c.186 4.444-2.037 8.826-6.163 11.193-3.905 2.24-8.529 2.103-12.218.063a12.236 12.236 0 01-5.443 6.491c-5.929 3.401-13.527 1.353-16.971-4.575a12.321 12.321 0 011.7-14.687A12.453 12.453 0 0157.2 35.56c-3.444-5.928-1.43-13.49 4.499-16.891 3.89-2.232 8.493-2.105 12.175-.088.083-4.177 2.274-8.201 6.164-10.433 5.928-3.401 13.526-1.353 16.971 4.574.493.849.861 1.733 1.135 2.631 5.203-1.228 10.825 1.017 13.652 5.881 3.444 5.927 1.43 13.489-4.499 16.891z"
+              ></path>
+            </g>
+            <g>
+              <path
+                fill-rule="evenodd"
+                stroke-width="3"
+                stroke="#547480"
+                fill="#9DFF7E"
+                d="M90.714 93.298l-8.387-12.315s-.664 12.549-11.43 24.013c-.552.589-.515 1.526.069 2.11l2.97 2.971 2.97 2.969c.584.585 1.521.622 2.11.069 11.464-10.766 24.012-11.429 24.012-11.429l-12.314-8.388z"
+              ></path>
+            </g>
+            <g>
+              <path
+                fill-rule="evenodd"
+                stroke-width="3"
+                stroke="#547480"
+                fill="#9DFF7E"
+                d="M120.358 92.27a10.647 10.647 0 01-1.961 1.538c2.253 4.127 1.665 9.373-1.794 12.831-4.214 4.214-11.085 4.175-15.347-.087a10.936 10.936 0 01-3.216-7.566 10.922 10.922 0 01-10.913-2.747 10.924 10.924 0 01-2.904-10.312 10.942 10.942 0 01-6.764-3.172c-4.262-4.263-4.301-11.135-.087-15.349 3.458-3.458 8.703-4.047 12.83-1.793a10.66 10.66 0 011.538-1.963c4.214-4.214 11.085-4.175 15.347.088a10.922 10.922 0 012.915 10.27 10.918 10.918 0 0110.269 2.914c4.263 4.262 4.302 11.134.087 15.348z"
+              ></path>
+            </g>
+          </svg>
