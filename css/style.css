@@ -258,7 +258,7 @@ body {
 }
 #Why_diet_to_door .Why_diet_to_door_div {
   position: relative;
-  background-image: url(/photos/bg-texture_lg.webp);
+
   display: flex;
   justify-content: center;
   align-items: center;
