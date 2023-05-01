@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="diettodoor place for healthy food come to you door"
+    />
+    <script
+      src="https://kit.fontawesome.com/e269a2e068.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/index.js" defer></script>
+    <title>main</title>
+  </head>
+  <body>
+    <div id="pop-ContactUs">
+      <div id="myForm">
+        <div class="header">
+          <h2>contact us</h2>
+          <button id="closeFormContact">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <h5>Be Strong, Be Healthy</h5>
+        <form>
+          <div class="rating">
+            <div class="rating-form">
+              <label for="super-happy" class="lb">
+                <input
+                  type="radio"
+                  name="rating"
+                  class="super-happy"
+                  id="super-happy"
+                  value="super-happy"
+                  checked
+                />
+                <svg class="svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12,17.5C14.33,17.5 16.3,16.04 17.11,14H6.89C7.69,16.04 9.67,17.5 12,17.5M8.5,11A1.5,1.5 0 0,0 10,9.5A1.5,1.5 0 0,0 8.5,8A1.5,1.5 0 0,0 7,9.5A1.5,1.5 0 0,0 8.5,11M15.5,11A1.5,1.5 0 0,0 17,9.5A1.5,1.5 0 0,0 15.5,8A1.5,1.5 0 0,0 14,9.5A1.5,1.5 0 0,0 15.5,11M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+                  ></path>
+                </svg>
+              </label>
+              <label for="neutral" class="lb">
+                <input
+                  type="radio"
+                  name="rating"
+                  class="neutral"
+                  id="neutral"
+                  value="neutral"
+                />
+                <svg
+                  class="svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.5,11A1.5,1.5 0 0,1 7,9.5A1.5,1.5 0 0,1 8.5,8A1.5,1.5 0 0,1 10,9.5A1.5,1.5 0 0,1 8.5,11M15.5,11A1.5,1.5 0 0,1 14,9.5A1.5,1.5 0 0,1 15.5,8A1.5,1.5 0 0,1 17,9.5A1.5,1.5 0 0,1 15.5,11M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M9,14H15A1,1 0 0,1 16,15A1,1 0 0,1 15,16H9A1,1 0 0,1 8,15A1,1 0 0,1 9,14Z"
+                  ></path>
+                </svg>
+              </label>
+              <label for="super-sad" class="lb">
+                <input
+                  type="radio"
+                  name="rating"
+                  class="super-sad"
+                  id="super-sad"
+                  value="super-sad"
+                />
+                <svg class="svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M16.18,7.76L15.12,8.82L14.06,7.76L13,8.82L14.06,9.88L13,10.94L14.06,12L15.12,10.94L16.18,12L17.24,10.94L16.18,9.88L17.24,8.82L16.18,7.76M7.82,12L8.88,10.94L9.94,12L11,10.94L9.94,9.88L11,8.82L9.94,7.76L8.88,8.82L7.82,7.76L6.76,8.82L7.82,9.88L6.76,10.94L7.82,12M12,14C9.67,14 7.69,15.46 6.89,17.5H17.11C16.31,15.46 14.33,14 12,14Z"
+                  ></path>
+                </svg>
+              </label>
+            </div>
+          </div>
+          <label for="weight">Subject </label>
+          <select name="cars" id="activity_level">
+            <option value="1">one</option>
+            <option value="1.2">two</option>
+            <option value="1.375">three</option>
+            <option value="1.55">four</option>
+            <option value="1.725">five</option>
+          </select>
+
+          <label for="comments">Comment</label>
+          <textarea
+            id="comments"
+            placeholder="Please type here..."
+            name="comments"
+          ></textarea>
+
+          <label id="upload-label" class="upload-label1" for="upload1"
+            ><i class="fa-solid fa-paperclip"></i>
+            <div class="file-info">
+              <span class="file-name file-name-contact">Other Attachments</span>
+              <span class="file-size file-size-contact"></span>
+            </div>
+          </label>
+          <input
+            type="file"
+            id="upload1"
+            class="contact_upload"
+            name="upload"
+          />
+          <div class="doc-meet-check">
+           <input type="checkbox" name="" id="">
+            <div class="doc-text">
+              <p class="doc-name">Book appointment with DR. Sherihan Bakkar</p>
+              <p class="alert">we will call you back in 48h</p>
+            </div>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <div id="pop-follow">
+      <div id="myForm">
+        <div class="header">
+          <h2>Follow up</h2>
+          <button id="closeForm"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <h5>Be Strong, Be Healthy</h5>
+        <form>
+          <label for="weight">What’s your current weight? </label>
+
+          <div class="input-div">
+            <input
+              type="text"
+              id="weight"
+              placeholder="eg.100"
+              name="weight"
+              onkeydown="replace_string(this);"
+              required
+            /><span>kg</span>
+          </div>
+
+          <label for="circumference"
+            >Your Current Center of a circumference</label
+          >
+
+          <div class="input-div">
+            <input
+              type="text"
+              placeholder="eg.28"
+              id="circumference"
+              name="circumference"
+              onkeydown="replace_string(this);"
+              required
+            />
+            <span>cm</span>
+          </div>
+
+          <label for="comments">Do you’ve any Notes</label>
+          <textarea
+            id="comments"
+            placeholder="Please type here..."
+            name="comments"
+          ></textarea>
+
+          <label id="upload-label" class="upload-label2" for="upload2"
+            ><i class="fa-solid fa-paperclip"></i>
+            <div class="file-info">
+              <span class="file-name file-name-follow">Other Attachments</span>
+              <span class="file-size file-size-follow"></span>
+            </div>
+          </label>
+          <input type="file" id="upload2" class="follow_upload" name="upload" />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <header>
+      <div class="navbar-logo">
+        <div class="logo">
+          <img src="./assets/logoWord.png" id="logo" alt="" srcset="" />
+          <div class="mydict second">
+            <div>
+              <label>
+                <input type="radio" name="radioo" checked="" />
+                <span>En</span>
+              </label>
+
+              <label>
+                <input type="radio" name="radioo" />
+                <span>AR</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="nav-bar">
+          <a href="" class="nav-button active">Home</a>
+          <a href="" class="nav-button">Meal Planner</a>
+          <a href="https://diettodoor.com/programs" class="nav-button"
+            >Programs</a
+          >
+          <a href="https://diettodoor.com/about" class="nav-button">About us</a>
+          <a id="contact" class="nav-button">Contact us</a>
+        </div>
+      </div>
+      <div class="bottons-group">
+        <div class="mydict">
+          <div>
+            <label>
+              <input type="radio" name="radio" checked />
+              <span>En</span>
+            </label>
+
+            <label>
+              <input type="radio" name="radio" />
+              <span>AR</span>
+            </label>
+          </div>
+        </div>
+        <a class="follow button">Follow up now</a>
+
+        <a class="logout"
+          ><img src="./assets/signup.svg" alt="" srcset="" />
+        </a>
+      </div>
+      <div class="responsive-navbar">
+        <a href="" class="nav-button active">Home</a>
+        <a href="" class="nav-button">Meal Planner</a>
+        <a href="" class="nav-button">Programs</a>
+        <a href="" class="nav-button">About us</a>
+        <a id="contact" class="nav-button">Contact us</a>
+        <hr />
+        <a class="follow nav-button">Follow up now</a>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <main class="main">
+      <section class="about-me">
+        <div class="welcome-text">
+          <div class="img">
+            <img
+              src="./assets/christian-buehner-QLcxFso3gLk-unsplash (1).jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <h1>
+            <span>welcome</span> <br />
+            Yossef Ibrahim
+          </h1>
+        </div>
+        <div class="my-sub">
+          <div class="sub">
+            <div class="active">
+              <h2>Subscriptions</h2>
+              <span>Active</span>
+            </div>
+            <a href="">+ Renew</a>
+          </div>
+          <div class="left-of-sub">
+            <h3>5 days <span>left</span></h3>
+            <p>
+              Note: Subscription renewal payments typically becomes active
+              between 24 and 48 hours after payment reaches diettodoor bank
+              account.
+            </p>
+          </div>
+        </div>
+        <div class="info-about-me">
+          <h3>Account Information</h3>
+          <div class="info">
+            <div class="one-info">
+              <div class="info-label">name</div>
+              <div class="theinfo">yossef ibrahim mohamed</div>
+            </div>
+            <div class="one-info">
+              <div class="info-label">Age</div>
+              <div class="theinfo">19</div>
+            </div>
+            <div class="one-info">
+              <div class="info-label">Gender</div>
+              <div class="theinfo">Male</div>
+            </div>
+            <div class="one-info">
+              <div class="info-label">Occupational</div>
+              <div class="theinfo">Software Engineer</div>
+            </div>
+            <div class="one-info">
+              <div class="info-label">Location</div>
+              <div class="theinfo">Cairo, Zamalek</div>
+            </div>
+            <div class="one-info">
+              <div class="info-label">Phone number</div>
+              <div class="theinfo">+2 0102346663</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-goals">
+        <div class="goals-title">
+          <h3>Goals</h3>
+          <span>lose weigh</span>
+        </div>
+        <div class="goals">
+          <div class="goal move1">
+            <h3>103 <span>kg</span></h3>
+            <p>Start - 25/3/2022</p>
+          </div>
+          <div class="arrow move2">></div>
+          <div class="goal move3">
+            <h3>91 <span>kg</span></h3>
+            <p>Start - 25/3/2022</p>
+          </div>
+          <div class="arrow move4">></div>
+          <div class="goal move5">
+            <h3>80 <span>kg</span></h3>
+            <p>Start - 25/3/2022</p>
+          </div>
+        </div>
+      </section>
+      <section class="RDI">
+        <div class="title">
+          <img src="./assets/rdi.svg" alt="" srcset="" /> Daily Recommended
+          Dietary Intake (RDI)
+        </div>
+        <div class="text">
+          is the average daily intake level of a particular nutrient that is
+          likely to meet the nutrient requirements of 97-98% of healthy
+          individuals in a particular life stage or gender group
+        </div>
+        <div class="advives">
+          <div class="advice">
+            <img src="./assets/cup.svg" alt="" srcset="" /> 13 Cup of water
+          </div>
+          <div class="advice">
+            <img src="./assets/clock.svg" alt="" srcset="" />Sleep for 8 hours
+          </div>
+          <div class="advice">
+            <img src="./assets/coffe.svg" alt="" srcset="" /> 1 cup of coffee
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--     <img src="./assets/food.svg" id="background-photo" alt="" srcset="" />
+ -->
+  </body>
+</html>
