@@ -8,16 +8,19 @@
       name="description"
       content="diettodoor place for healthy food come to you door"
     />
+
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="./js/index.js" defer></script>
     <script
       src="https://kit.fontawesome.com/e269a2e068.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/index.css" />
-    <script src="./js/index.js" defer></script>
     <title>main</title>
   </head>
   <body>
-    <div id="pop-ContactUs">
+    <div class="pop" id="pop-ContactUs">
       <div id="myForm">
         <div class="header">
           <h2>contact us</h2>
@@ -116,7 +119,7 @@
         </form>
       </div>
     </div>
-    <div id="pop-follow">
+    <div class="pop" id="pop-follow">
       <div id="myForm">
         <div class="header">
           <h2>Follow up</h2>
@@ -184,7 +187,7 @@
       <div class="navbar-logo">
         <div class="logo">
           <img src="./assets/logoWord.png" id="logo" alt="" srcset="" />
-          <div class="mydict second">
+          <div class="lang_button second">
             <div>
               <label>
                 <input type="radio" name="radioo" checked="" />
@@ -208,8 +211,8 @@
           <a id="contact" class="nav-button">Contact us</a>
         </div>
       </div>
-      <div class="bottons-group">
-        <div class="mydict">
+      <div class="buttons-group">
+        <div class="lang_button">
           <div>
             <label>
               <input type="radio" name="radio" checked />
@@ -224,15 +227,15 @@
         </div>
         <a class="follow button">Follow up now</a>
 
-        <a class="logout"
-          ><img src="./assets/signup.svg" alt="" srcset="" />
-        </a>
+        <a class="logout"><i class="fa-solid fa-right-from-bracket"></i> </a>
       </div>
       <div class="responsive-navbar">
         <a href="" class="nav-button active">Home</a>
         <a href="" class="nav-button">Meal Planner</a>
-        <a href="" class="nav-button">Programs</a>
-        <a href="" class="nav-button">About us</a>
+        <a href="https://diettodoor.com/programs" class="nav-button"
+          >Programs</a
+        >
+        <a href="https://diettodoor.com/about" class="nav-button">About us</a>
         <a id="contact" class="nav-button">Contact us</a>
         <hr />
         <a class="follow nav-button">Follow up now</a>
@@ -350,7 +353,6 @@
         </div>
       </section>
     </main>
-    <!--     <img src="./assets/food.svg" id="background-photo" alt="" srcset="" />
- -->
+    <img src="./assets/food.svg" id="background-photo" alt="" srcset="" />
   </body>
 </html>

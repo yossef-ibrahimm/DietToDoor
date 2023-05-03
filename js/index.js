@@ -5,7 +5,8 @@ function replace_string(e) {
 function followUpPage(popId, openButton, closeBtn) {
   const openFormBtn = document.querySelectorAll(openButton);
   const closeFormBtn = document.getElementById(closeBtn);
-  const pop = document.getElementById(popId);
+/*   const Mainpop = document.querySelectorAll(".pop");
+ */  const pop = document.getElementById(popId);
   const form = document.querySelector(`#${popId} #myForm`);
   const html = document.querySelector("html");
   openFormBtn.forEach((e) => {
@@ -25,8 +26,7 @@ function followUpPage(popId, openButton, closeBtn) {
       );
     });
   });
-
-  closeFormBtn.addEventListener("click", () => {
+  function close() {
     form.animate(
       [
         { transform: "scale(1)", opacity: 1 },
@@ -39,7 +39,15 @@ function followUpPage(popId, openButton, closeBtn) {
     ).onfinish = () => (
       (pop.style.display = "none"), (html.style.cssText = " overflow-x:hidden;")
     );
+  }
+  closeFormBtn.addEventListener("click", () => {
+    close();
+  });/*
+  Mainpop.forEach((e) => {
+    e.addEventListener("click", () => {
+    close();
   });
+  }) */
 
   /* function to get the data from upload button on follow up page and add some style to input */
   function uploadInputFollowUpPage(input, fileName, fileSize, label) {
