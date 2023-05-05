@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login-page.css" />
+
+    <title>login page</title>
+  </head>
+  <body>
+    <main>
+      <section class="words-Section">
+        <img class="foods-img" src="./assets/foods.png" alt="" srcset="" />
+        <div class="info">
+          <div class="logo">
+            <img src="./assets/logo.png" alt="" srcset="" />
+          </div>
+          <div class="words">Clean Eating 7 days Meal Plan</div>
+          <div class="words_p">
+            <p>
+              Take control of your diet,and get into the best shape of your
+              life.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="form-logo">
+          <img
+            class="logo-with-words"
+            src="./assets/logoWord.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <form >
+          <label class="login_label" for="username">User Name</label>
+          <input
+            type="text"
+            name=""
+            class="input"
+            id="username"
+            placeholder="UserName"
+          />
+          <span id="user-error">username can not be empty</span>
+          <label class="login_label" for="password">Password</label>
+          <input
+            class="input"
+            type="password"
+            name=""
+            placeholder="Password"
+            id="password"
+          />
+          <span id="pass-error">password can not be empty</span>
+          <button type="submit" id="login-button">Login</button>
+        </form>
+      </section>
+    </main>
+    <script src="./js/login-page.js"></script>
+  </body>
+</html>

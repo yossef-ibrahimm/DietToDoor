@@ -218,20 +218,26 @@ header .logo img:hover {
     width: 1px;
 }
 
-.lang_button input[type="radio"]:checked+span {
+.lang_button input[type="radio"]:checked+a {
     box-shadow: 0 0 0 0.0625em #a0b63b;
     background-color: #e9efce;
     z-index: 1;
     color: #a0b63b;
 }
 
-.lang_button label span {
+.lang_button label a {
     display: block;
     cursor: pointer;
     background-color: #fff;
-    padding: 10px;
+    /*  padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 35px;
+    height: 38px;
     position: relative;
-    margin-left: 0.0625em;
+    /* margin-left: 0.0625em; */
     box-shadow: 0 0 0 0.0625em #b5bfd9;
     letter-spacing: 0.05em;
     color: #717171;
@@ -239,11 +245,11 @@ header .logo img:hover {
     transition: background-color 0.5s ease;
 }
 
-.lang_button label:first-child span {
+.lang_button label:first-child a {
     border-radius: 0.375em 0 0 0.375em;
 }
 
-.lang_button label:last-child span {
+.lang_button label:last-child a {
     border-radius: 0 0.375em 0.375em 0;
 }
 
