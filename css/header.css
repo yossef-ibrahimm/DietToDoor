@@ -1,11 +1,12 @@
 header {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #cdcccc;
-  background-color: #ffffff;
-  width: 100%;
-  justify-content: space-between;
-  padding: 10px;
+    display: flex;
+
+    align-items: center;
+    border-bottom: 1px solid #cdcccc;
+    background-color: #ffffff;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 header .navbar-logo {
@@ -13,10 +14,12 @@ header .navbar-logo {
 }
 
 header .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+    cursor: pointer;
 }
 
 header .logo img {
@@ -29,11 +32,13 @@ header .logo img:hover {
 }
 
 .nav-bar {
-  margin-left: 50px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
+    margin-left: 50px;
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: center;
+    gap: 20px;
 }
 
 .nav-bar .nav-button {
@@ -66,14 +71,15 @@ header .logo img:hover {
 
 .nav-bar .active:after,
 .nav-bar .nav-button:hover::after {
-  content: '';
-  position: absolute;
-  background-color: #a0b63b;
-  height: 1.5px;
-  transform: scaleX(1);
-  width: 50%;
-  left: 25%;
-  bottom: -5px;
+    content: "";
+    position: absolute;
+    background-color: #a0b63b;
+    height: 1.5px;
+
+    transform: scaleX(1);
+    width: 50%;
+    left: 25%;
+    bottom: -5px;
 }
 
 .nav-bar .active:hover {
@@ -86,10 +92,11 @@ header .logo img:hover {
 }
 
 .buttons-group {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    align-items: center;
+    gap: 20px;
 }
 
 .buttons-group .logout {
@@ -195,9 +202,10 @@ header .logo img:hover {
 }
 
 .lang_button div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
 }
 
 .lang_button input[type='radio'] {
@@ -218,21 +226,23 @@ header .logo img:hover {
 }
 
 .lang_button label a {
-  display: block;
-  cursor: pointer;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 35px;
-  height: 38px;
-  position: relative;
-  box-shadow: 0 0 0 0.0625em #b5bfd9;
-  letter-spacing: 0.05em;
-  color: #717171;
-  text-align: center;
-  transition: background-color 0.5s ease;
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    /*  padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 35px;
+    height: 38px;
+    position: relative;
+    /* margin-left: 0.0625em; */
+    box-shadow: 0 0 0 0.0625em #b5bfd9;
+    letter-spacing: 0.05em;
+    color: #717171;
+    text-align: center;
+    transition: background-color 0.5s ease;
 }
 
 .lang_button label:first-child a {
