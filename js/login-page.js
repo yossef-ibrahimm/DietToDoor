@@ -41,7 +41,7 @@ function validatePassword() {
     return true;
   }
 }
-/* 
+/*
 function togglePassword() {
   if (passwordInput.type === "password") {
     passwordInput.type = "text";
@@ -63,8 +63,8 @@ passwordInput.addEventListener("blur", validatePassword);
 /* togglePasswordButton.addEventListener("click", togglePassword);
  */document.querySelector("form").addEventListener("submit", (event) => {
   if (!validateForm()) {
-    
+
     event.preventDefault();
-    
+
   }
 });
