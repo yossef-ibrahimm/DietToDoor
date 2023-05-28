@@ -3,12 +3,12 @@ function replace_string(e) {
 }
 /* follow up function to open and close page it block on click and add animation  */
 function followUpPage(popId, openButton, closeBtn) {
-  const openFormBtn = document.querySelectorAll(openButton);
-  const closeFormBtn = document.getElementById(closeBtn);
-/*   const Mainpop = document.querySelectorAll(".pop");
- */  const pop = document.getElementById(popId);
-  const form = document.querySelector(`#${popId} #myForm`);
-  const html = document.querySelector("html");
+  const openFormBtn = document.querySelectorAll(openButton)
+  const closeFormBtn = document.getElementById(closeBtn)
+  /*   const Mainpop = document.querySelectorAll(".pop");
+   */ const pop = document.getElementById(popId)
+  const form = document.querySelector(`#${popId} #myForm`)
+  const html = document.querySelector('html')
   openFormBtn.forEach((e) => {
     e.addEventListener('click', () => {
       document.documentElement.scrollTop = 0
@@ -40,9 +40,9 @@ function followUpPage(popId, openButton, closeBtn) {
       (pop.style.display = 'none'), (html.style.cssText = ' overflow-x:hidden;')
     )
   }
-  closeFormBtn.addEventListener("click", () => {
-    close();
-  });/*
+  closeFormBtn.addEventListener('click', () => {
+    close()
+  }) /*
   Mainpop.forEach((e) => {
     e.addEventListener("click", () => {
     close();
@@ -99,8 +99,8 @@ function responsiveHamburgerButton() {
     hamburgerButton.classList.toggle('active')
     responsiveNavbar.classList.toggle('flex')
     setTimeout(() => {
-      responsiveNavbar.classList.toggle("active");
-    }, 100);
-  });
+      responsiveNavbar.classList.toggle('active')
+    }, 100)
+  })
 }
 responsiveHamburgerButton()
