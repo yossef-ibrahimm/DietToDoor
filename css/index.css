@@ -12,7 +12,6 @@ a {
   color: #000000;
 }
 
-
 body {
   font-family: 'Rubik', sans-serif;
   background: #e5e5e5;
@@ -35,7 +34,6 @@ section {
   box-shadow: 3px 8.3px 8.1px rgba(0, 0, 0, 0.11),
     24px 66px 65px rgba(0, 0, 0, 0.058);
 }
-
 
 /*about me section design*/
 .about-me {
@@ -665,4 +663,11 @@ section {
   position: fixed;
   width: 100%;
   bottom: 0px;
+}
+.clouse {
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+  position: absolute;
+  z-index: 99999;
 }

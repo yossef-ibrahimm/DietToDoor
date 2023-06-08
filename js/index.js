@@ -5,15 +5,16 @@ function replace_string(e) {
 function followUpPage(popId, openButton, closeBtn) {
   const openFormBtn = document.querySelectorAll(openButton)
   const closeFormBtn = document.getElementById(closeBtn)
-  /*   const Mainpop = document.querySelectorAll(".pop");
-   */ const pop = document.getElementById(popId)
+  const pop = document.getElementById(popId)
   const form = document.querySelector(`#${popId} #myForm`)
-  const html = document.querySelector('html')
+  const body = document.querySelector('body')
+  const mainPop = document.querySelectorAll('.clouse')
+
   openFormBtn.forEach((e) => {
     e.addEventListener('click', () => {
       document.documentElement.scrollTop = 0
       pop.style.display = 'grid'
-      html.style.cssText = 'overflow:hidden;'
+      body.style.cssText = 'overflow:hidden;'
       form.animate(
         [
           { transform: 'scale(0.5)', opacity: 0 },
@@ -37,18 +38,18 @@ function followUpPage(popId, openButton, closeBtn) {
         easing: 'ease-out',
       }
     ).onfinish = () => (
-      (pop.style.display = 'none'), (html.style.cssText = ' overflow-x:hidden;')
+      (pop.style.display = 'none'), (body.style.cssText = ' overflow-x:hidden;')
     )
   }
   closeFormBtn.addEventListener('click', () => {
     close()
-  }) /*
-  Mainpop.forEach((e) => {
-    e.addEventListener("click", () => {
-    close();
-  });
-  }) */
+  })
 
+  mainPop.forEach((e) => {
+    e.addEventListener('click', () => {
+      close()
+    })
+  })
   /* function to get the data from upload button on follow up page and add some style to input */
   function uploadInputFollowUpPage(input, fileName, fileSize, label) {
     const inputFile = document.querySelector(`.${input}`)
@@ -94,7 +95,6 @@ function getDateNow() {
 function responsiveHamburgerButton() {
   const hamburgerButton = document.querySelector('.hamburger')
   const responsiveNavbar = document.querySelector('.responsive-navbar')
-
   hamburgerButton.addEventListener('click', () => {
     hamburgerButton.classList.toggle('active')
     responsiveNavbar.classList.toggle('flex')
