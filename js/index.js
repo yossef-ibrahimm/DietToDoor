@@ -2,32 +2,30 @@ function replace_string(e) {
   e.value = e.value.replace(/[^0-9.]/g, '')
 }
 /* follow up function to open and close page it block on click and add animation  */
-function followUpPage(popId, openButton, closeBtn) {
-  const openFormBtn = document.querySelectorAll(openButton)
-  const closeFormBtn = document.getElementById(closeBtn)
-  const pop = document.getElementById(popId)
-  const form = document.querySelector(`#${popId} #myForm`)
-  const body = document.querySelector('body')
-  const mainPop = document.querySelectorAll('.clouse')
+function followUpPage(popupId, openButtonsSelector, closeButtonId) {
+  const popup = document.getElementById(popupId)
+  const form = popup.querySelector('#myForm')
+  const body = document.body
+  const openFormButtons = document.querySelectorAll(openButtonsSelector)
+  const closeFormButton = document.getElementById(closeButtonId)
+  const shadowPopUp = document.querySelectorAll('.close-pop')
+  function openForm() {
+    document.documentElement.scrollTop = 0
+    popup.style.display = 'grid'
+    body.style.overflow = 'hidden'
+    form.animate(
+      [
+        { transform: 'scale(0.5)', opacity: 0 },
+        { transform: 'scale(1)', opacity: 1 },
+      ],
+      {
+        duration: 500,
+        easing: 'ease-out',
+      }
+    )
+  }
 
-  openFormBtn.forEach((e) => {
-    e.addEventListener('click', () => {
-      document.documentElement.scrollTop = 0
-      pop.style.display = 'grid'
-      body.style.cssText = 'overflow:hidden;'
-      form.animate(
-        [
-          { transform: 'scale(0.5)', opacity: 0 },
-          { transform: 'scale(1)', opacity: 1 },
-        ],
-        {
-          duration: 500,
-          easing: 'ease-out',
-        }
-      )
-    })
-  })
-  function close() {
+  function closeForm() {
     form.animate(
       [
         { transform: 'scale(1)', opacity: 1 },
@@ -37,25 +35,23 @@ function followUpPage(popId, openButton, closeBtn) {
         duration: 500,
         easing: 'ease-out',
       }
-    ).onfinish = () => (
-      (pop.style.display = 'none'), (body.style.cssText = ' overflow-x:hidden;')
-    )
+    ).onfinish = () => {
+      popup.style.display = 'none'
+      body.style.overflowX = 'hidden'
+    }
   }
-  closeFormBtn.addEventListener('click', () => {
-    close()
-  })
 
-  mainPop.forEach((e) => {
-    e.addEventListener('click', () => {
-      close()
-    })
-  })
-  /* function to get the data from upload button on follow up page and add some style to input */
-  function uploadInputFollowUpPage(input, fileName, fileSize, label) {
+  function handleInputChange(
+    input,
+    fileNameClass,
+    fileSizeClass,
+    labelSelector
+  ) {
     const inputFile = document.querySelector(`.${input}`)
-    const fileNameField = document.querySelector(`.${fileName}`)
-    const fileSizeField = document.querySelector(`.${fileSize}`)
-    const fileIcon = document.querySelector(`${label} i`)
+    const fileNameField = document.querySelector(`.${fileNameClass}`)
+    const fileSizeField = document.querySelector(`.${fileSizeClass}`)
+    const fileIcon = document.querySelector(`${labelSelector} i`)
+
     inputFile.addEventListener('change', function () {
       fileIcon.style.color = '#A0B63B'
       const uploadedFileName = inputFile.files[0].name
@@ -65,18 +61,33 @@ function followUpPage(popId, openButton, closeBtn) {
       fileSizeField.textContent = uploadedFileSize
     })
   }
-  uploadInputFollowUpPage(
-    'follow_upload',
-    'file-name-follow',
-    'file-size-follow',
-    '.upload-label2'
-  )
-  uploadInputFollowUpPage(
-    'contact_upload',
-    'file-name-contact',
-    'file-size-contact',
-    '.upload-label1'
-  )
+
+  function initialize() {
+    openFormButtons.forEach((button) => {
+      button.addEventListener('click', openForm)
+    })
+
+    closeFormButton.addEventListener('click', closeForm)
+
+    shadowPopUp.forEach((element) => {
+      element.addEventListener('click', closeForm)
+    })
+
+    handleInputChange(
+      'follow_upload',
+      'file-name-follow',
+      'file-size-follow',
+      '.upload-label2'
+    )
+
+    handleInputChange(
+      'contact_upload',
+      'file-name-contact',
+      'file-size-contact',
+      '.upload-label1'
+    )
+  }
+  initialize()
 }
 followUpPage('pop-follow', '.follow', 'closeForm')
 followUpPage('pop-ContactUs', '#contact', 'closeFormContact')
@@ -91,16 +102,26 @@ function getDateNow() {
   const formattedToday = dd + '/' + mm + '/' + yyyy
   return formattedToday
 }
-/*  function open and close responsive nav bar */
+
 function responsiveHamburgerButton() {
   const hamburgerButton = document.querySelector('.hamburger')
   const responsiveNavbar = document.querySelector('.responsive-navbar')
+
   hamburgerButton.addEventListener('click', () => {
-    hamburgerButton.classList.toggle('active')
-    responsiveNavbar.classList.toggle('flex')
-    setTimeout(() => {
+    if (responsiveNavbar.classList.contains('flex')) {
+      hamburgerButton.classList.toggle('active')
       responsiveNavbar.classList.toggle('active')
-    }, 100)
+      setTimeout(() => {
+        responsiveNavbar.classList.toggle('flex')
+      }, 300)
+    } else {
+      hamburgerButton.classList.toggle('active')
+      responsiveNavbar.classList.toggle('flex')
+      setTimeout(() => {
+        responsiveNavbar.classList.toggle('active')
+      }, 100)
+    }
   })
 }
+
 responsiveHamburgerButton()
